@@ -1,0 +1,101 @@
+<%- include('partials/header') %>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+<%- include('partials/navbar') %>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Tables</li>
+        </ol>
+        <!-- Example DataTables Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i> Problems
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Metro Code</th>
+                            <th>Date/time</th>
+                            <th>Confirmed by driver</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Metro no working (x8)</td>
+                            <td>M01</td>
+                            <td>13/05/2017</td>
+                            <td>Yes</td>
+                            <td><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-lock" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Delay in time (x4)</td>
+                            <td>M03</td>
+                            <td>14/05/2017</td>
+                            <td>Not yet</td>
+                            <td><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-lock" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Just plating (x5)</td>
+                            <td>M04</td>
+                            <td>19/05/2017</td>
+                            <td>No</td>
+                            <td><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-lock" aria-hidden="true"></i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2017</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/logout') %>
+
+<%- include('partials/footer') %>
