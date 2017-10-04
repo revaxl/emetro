@@ -3,7 +3,7 @@
 interfaces website
 
 ## Branch Server
-application php/symfony
+web application
 
 ## Branch mobile
 application android
